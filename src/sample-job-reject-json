@@ -1,0 +1,16 @@
+https://test.swipejobs.com/api/worker/7f90df6e-b832-44e2-b624-3143d428001f/job/5775d8e18a488e6c5bb08333/reject
+
+job 1 says success = true
+job 2 says success = false
+
+{
+  "success": true
+}
+
+
+
+{
+  "success": false,
+  "message":"Sorry, this role was no longer available",
+  "errorCode":"FAIL-101"
+}

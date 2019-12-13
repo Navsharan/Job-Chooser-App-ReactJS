@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  background-color: #b2b2b2;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.logo,
+.user-name {
+  margin: 10px;
+}

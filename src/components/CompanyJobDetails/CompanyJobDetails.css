@@ -1,0 +1,12 @@
+.company-job-details {
+  display: block;
+}
+
+.job-title {
+  padding: 5px 10px 0;
+  font-weight: bold;
+}
+
+.company-name {
+  padding: 0 10px 5px;
+}
