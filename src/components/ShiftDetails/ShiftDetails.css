@@ -1,0 +1,9 @@
+.shift-details {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.shift-dates {
+  font-weight: normal;
+  line-height: 1.4;
+}

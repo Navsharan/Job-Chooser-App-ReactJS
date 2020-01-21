@@ -41,6 +41,9 @@ const App = () => {
                 <JobBanner /*imageSrc={job.jobTitle.imageUrl}*/></JobBanner>
                 <CompanyJobDetails
                   jobTitle={job.jobTitle.name}
+                  /* equivalent as above
+                  jobTitle = {job["jobTitle"]["name"]}
+                  */
                   companyName={job.company.name}
                 ></CompanyJobDetails>
                 <DistanceAndRate
