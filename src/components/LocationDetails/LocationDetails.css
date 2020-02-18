@@ -1,0 +1,14 @@
+.location-details {
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+}
+
+.location-name {
+  font-weight: normal;
+}
+
+.location-distance {
+  font-weight: normal;
+  font-size: 10px;
+}

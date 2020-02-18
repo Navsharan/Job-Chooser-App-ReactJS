@@ -3,7 +3,15 @@
   padding: 10px;
 }
 
+.shift-details:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%;
+  padding-top: 20px;
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+
 .shift-dates {
   font-weight: normal;
-  line-height: 1.4;
 }

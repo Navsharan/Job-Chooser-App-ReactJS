@@ -6,6 +6,7 @@ import JobBanner from "./components/JobBanner/JobBanner";
 import CompanyJobDetails from "./components/CompanyJobDetails/CompanyJobDetails";
 import DistanceAndRate from "./components/DistanceAndRate/DistanceAndRate";
 import ShiftDetails from "./components/ShiftDetails/ShiftDetails";
+import LocationDetails from "./components/LocationDetails/LocationDetails";
 
 const workerID = "7f90df6e-b832-44e2-b624-3143d428001f";
 
@@ -38,7 +39,7 @@ const App = () => {
           return (
             <React.Fragment key={job.jobId}>
               <div className="container-job">
-                <JobBanner /*imageSrc={job.jobTitle.imageUrl}*/></JobBanner>
+                <JobBanner imageSrc={job.jobTitle.imageUrl}></JobBanner>
                 <CompanyJobDetails
                   jobTitle={job.jobTitle.name}
                   /* equivalent as above
@@ -51,6 +52,10 @@ const App = () => {
                   rate={job.wagePerHourInCents}
                 ></DistanceAndRate>
                 <ShiftDetails shiftsDates={job.shifts}></ShiftDetails>
+                <LocationDetails
+                  locationDetails={job.company.address.formattedAddress}
+                  distance={job.milesToTravel}
+                ></LocationDetails>
               </div>
             </React.Fragment>
           );
